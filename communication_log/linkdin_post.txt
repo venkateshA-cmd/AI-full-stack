@@ -1,0 +1,6 @@
+Day 1 of my journey to becoming an AI Full-Stack Engineer. 
+Instead of generic tutorials, I’m building real-world systems. 
+Today, I built an LLM Token Cost Safeguard in Python. 
+Learned how to protect OS processes using try/except blocks to prevent user-input crashes, 
+and implemented O(1) time complexity logic gates for budget approvals. 
+Building > Watching.
