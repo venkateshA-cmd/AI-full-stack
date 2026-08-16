@@ -1,4 +1,20 @@
-users_db = {}
+import json
+
+def save_database():
+    with open("users_db.json","w") as file:
+        json.dump(users_db,file,indent=4)
+
+def load_database():
+    try:
+        with open("users_db.json","r") as file:
+           loaded_database = json.load(file)
+           return loaded_database
+    except FileNotFoundError:
+        print("users_db json is not exist!...")
+        return {}
+
+    
+users_db = load_database()
 
 def add_user():
     username = input("Enter your name:")
@@ -7,6 +23,7 @@ def add_user():
     else:
         users_db[username] = {"limit":100,"history":[]}
         print("User added successfully.")
+    save_database()
 
 
 def log_activity():
@@ -25,6 +42,7 @@ def log_activity():
             print("WARNING: User is out of API credits!")
         else:
             print(f"Action logged. Remaining credits: {users_db[username]['limit']}")
+        save_database()
 
 def view_database():
      print(users_db)
