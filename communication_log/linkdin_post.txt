@@ -4,3 +4,15 @@ Today, I built an LLM Token Cost Safeguard in Python.
 Learned how to protect OS processes using try/except blocks to prevent user-input crashes, 
 and implemented O(1) time complexity logic gates for budget approvals. 
 Building > Watching.
+
+"Day 3 of my AI Full-Stack journey.
+Today I tackled State and Memory Management.
+I upgraded my In-Memory User Manager to include persistent storage using Python's JSON library.
+Learned the hard way how un-returned functions lead to NoneType crashes, and bridged the gap between volatile RAM (O(1) Hash Maps) and persistent Disk I/O.
+#Python #BackendEngineering #BuildInPublic"
+
+Day 4: Connected my Python logic to the internet. 
+Built an automated HTTP pipeline using the requests library to fetch JSON data from a REST API. 
+Most importantly, I implemented a data cleaning function to strip out unnecessary payload weight before saving to disk, 
+drastically reducing Space Complexity. 
+Next up: Object-Oriented Programming (OOP) to wrap this into an AI Agent.
