@@ -16,3 +16,9 @@ Built an automated HTTP pipeline using the requests library to fetch JSON data f
 Most importantly, I implemented a data cleaning function to strip out unnecessary payload weight before saving to disk, 
 drastically reducing Space Complexity. 
 Next up: Object-Oriented Programming (OOP) to wrap this into an AI Agent.
+
+Day 5: Stepped up from scripting to Software Engineering. 
+Today I learned Object-Oriented Programming (OOP) by building an encapsulated AI Agent Class. 
+I packaged network requests, disk I/O, and state management into a single blueprint, 
+preventing global variable pollution. 
+This is the exact architecture libraries like LangChain use under the hood.
