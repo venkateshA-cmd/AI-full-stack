@@ -22,3 +22,4 @@ Today I learned Object-Oriented Programming (OOP) by building an encapsulated AI
 I packaged network requests, disk I/O, and state management into a single blueprint, 
 preventing global variable pollution. 
 This is the exact architecture libraries like LangChain use under the hood.
+
