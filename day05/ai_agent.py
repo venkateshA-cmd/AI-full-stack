@@ -54,15 +54,19 @@ class AIAgent:
             
             if response.status_code == 200:
                 ai_reply = response.json()["choices"][0]["message"]["content"]
-                print(f"\n[{self.name}]: {ai_reply}\n")
+                # Keep the print if you want to see it in your terminal
+                print(f"\n[{self.name}]: {ai_reply}\n") 
                 
-                # Save the AI's reply to the agent's memory
                 self.add_to_memory("assistant", ai_reply)
+                return ai_reply  # <--- NEW: Return the data to the server!
             else:
-                print(f"\nAPI Error {response.status_code}: {response.text}\n")
+                error_msg = f"API Error {response.status_code}: {response.text}"
+                print(error_msg)
+                return error_msg # <--- NEW: Return the error so the web user knows
                 
         except requests.exceptions.RequestException as e:
             print(f"Network failure: {e}")
+            return "Network failure."
 
     # 5. THE DISK SAVER
     def save_agent_state(self):
