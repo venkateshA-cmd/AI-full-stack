@@ -30,3 +30,5 @@ More importantly, I implemented strict Secrets Management using .env and .gitign
 
 
 Day 8: Crossed the bridge from Python Scripting to Web Engineering. Today I spun up my first local web server using FastAPI and Uvicorn. The biggest paradigm shift? Realizing that CLI input() functions are useless in web development—servers catch user data through HTTP Requests and URL parameters. Next up: Injecting my AI Agent into this server to make it globally accessible.
+
+Day 9 of my AI Full-Stack journey. Today, my AI woke up on the web. I successfully integrated my Python OOP AI Agent into a FastAPI web server. I transitioned from local CLI scripts to handling HTTP POST requests, using Pydantic to strictly validate the incoming JSON payloads before they hit my LLM logic. Tested and verified via Swagger UI. Next up: CORS and Middleware. #FastAPI #BackendEngineering #AI #BuildInPublic
