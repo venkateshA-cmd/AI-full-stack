@@ -23,3 +23,7 @@ I packaged network requests, disk I/O, and state management into a single bluepr
 preventing global variable pollution. 
 This is the exact architecture libraries like LangChain use under the hood.
 
+Day 6: My code is officially talking to an Artificial Intelligence. 
+Today I upgraded my OOP AI Agent to handle HTTP POST requests and connect to an external LLM via API. 
+More importantly, I implemented strict Secrets Management using .env and .gitignore files to ensure my API keys are never leaked to public repositories. 
+#SecurityFirst #BackendEngineering #AI"

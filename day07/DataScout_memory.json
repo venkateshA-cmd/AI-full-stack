@@ -1,0 +1,14 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert research analyst. Summarize raw data concisely in bullet points."
+    },
+    {
+        "role": "user",
+        "content": "Please analyze and summarize this raw JSON data: {'userId': 1, 'id': 3, 'title': 'ea molestias quasi exercitationem repellat qui ipsa sit aut', 'body': 'et iusto sed quo iure\\nvoluptatem occaecati omnis eligendi aut ad\\nvoluptatem doloribus vel accusantium quis pariatur\\nmolestiae porro eius odio et labore et velit aut'}"
+    },
+    {
+        "role": "assistant",
+        "content": "Based on the provided JSON data, I can analyze and summarize it as follows:\n\n**Data Points:**\n\n* **User ID:** 1\n* **Post ID:** 3\n* **Post Title:** \"ea molestias quasi exercitationem repellat qui ipsa sit aut\"\n* **Post Content:**\n\t+ Contains multiple paragraphs\n\t+ Paragraph 1: \"et iusto sed quo iure\"\n\t+ Paragraph 2: \"voluptatem occaecati omnis eligendi aut ad voluptatem doloribus vel accusantium quis pariatur\"\n\t+ Paragraph 3: \"molestiae porro eius odio et labore et velit aut\"\n\n**Key Features:**\n\n* Post author: The data does not explicitly mention the post author, only the user ID.\n* Post type: The data is a general post, but it may belong to a specific category or type based on the title and content.\n* Format: The post content is a long-form text, which may indicate a blog post, an article, or a short essay.\n* Language: The post title and content appear to be written in English."
+    }
+]
