@@ -1,6 +1,12 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from ai_agent import AIAgent  # This line works because ai_agent.py is in the same folder!
+from ai_agent import AIAgent 
+# This line works because ai_agent.py is in the same folder!
+
+from database import engine,Base
+import models
+
+models.Base.metadata.create_all(bind=engine)
 
 # 1. Boot up the FastAPI app
 app = FastAPI()
